@@ -537,7 +537,12 @@ ul {
   padding: 5px 10px;
   z-index: 2;
 }
-
+.background-class {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .filter-buttons button:hover,
 .filter-buttons button:focus {
   color: rgb(255, 255, 255);
