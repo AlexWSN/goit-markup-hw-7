@@ -98,6 +98,16 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 320px) {
+  .navbar-nav {
+    overflow-x: hidden;
+  }
+}
+@media screen and (min-resolution: 2dppx) {
+  .navbar-nav {
+    background-image: url("images"); /* Specificați calea către imagine */
+  }
+}
 
 .menu .link {
   padding: 10px;
@@ -620,14 +630,14 @@ p {
 /* Pentru ecrane cu densitate normală (x1) */
 @media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 96dpi) {
   .box-top {
-    background-image: url("/images/background@1x.jpg");
+    background-image: url("/images/herobackgroundimage.jpg");
   }
 }
 
 /* Pentru ecrane cu densitate dublă (x2) */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .box-top {
-    background-image: url("/images/background@2x.jpg");
+    background-image: url("/images/herobackgroundimage.jpg");
   }
 }
 
