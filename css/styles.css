@@ -1090,49 +1090,47 @@ input:-ms-input-placeholder {
     display: none;
   }
 }
-/* Stiluri generale pentru container */
-.container {
-  width: 90%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 /* Stiluri pentru lista de funcționalități */
-.feature-list, .designers-list {
-  list-style: none;
-  padding: 0;
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* Stiluri pentru fiecare element din lista de funcționalități */
-.feature-list li, .designers-list li {
-  /* Stiluri pentru elementele listei */
+.feature-list li {
+  width: 45%; /* Astfel încât să aibă două coloane pe ecranele mici */
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Stiluri pentru imaginea SVG */
 .feature-list li svg {
-  max-width: 100%;
+  width: 100%; /* Face imaginea să fie la lățime maximă în containerul său */
+  max-width: 200px; /* Limită de lățime a imaginii */
   height: auto;
 }
 
 /* Stiluri pentru textul din lista de funcționalități */
-.feature-list li h4, .designers-list h2 {
-  /* Stiluri pentru titluri */
+.feature-list li h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.2rem; /* Mărimea fontului pentru titlu */
 }
 
 .feature-list li p {
-  /* Stiluri pentru paragrafe */
+  margin: 0;
+  font-size: 1rem; /* Mărimea fontului pentru paragrafe */
 }
 
-
+/* Media query pentru ecrane cu lățime mai mică de 768px */
 @media (max-width: 768px) {
-  .container {
-      width: 100%;
-      padding: 10px;
+  .feature-list li {
+      width: 90%; /* Se extinde pe întreaga lățime a ecranului */
   }
 
-  .feature-list li, .designers-list li {
-      /* Stiluri pentru elementele listei la dimensiuni mici ale ecranului */
+  .feature-list li svg {
+      max-width: 100%; /* Se adaptează la lățimea ecranului */
   }
 
   /* Alte stiluri pentru elementele la dimensiuni mici ale ecranului */
