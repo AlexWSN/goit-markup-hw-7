@@ -1090,6 +1090,53 @@ input:-ms-input-placeholder {
     display: none;
   }
 }
+/* Stiluri generale pentru container */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Stiluri pentru lista de funcționalități */
+.feature-list, .designers-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Stiluri pentru fiecare element din lista de funcționalități */
+.feature-list li, .designers-list li {
+  /* Stiluri pentru elementele listei */
+}
+
+/* Stiluri pentru imaginea SVG */
+.feature-list li svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stiluri pentru textul din lista de funcționalități */
+.feature-list li h4, .designers-list h2 {
+  /* Stiluri pentru titluri */
+}
+
+.feature-list li p {
+  /* Stiluri pentru paragrafe */
+}
+
+
+@media (max-width: 768px) {
+  .container {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .feature-list li, .designers-list li {
+      /* Stiluri pentru elementele listei la dimensiuni mici ale ecranului */
+  }
+
+  /* Alte stiluri pentru elementele la dimensiuni mici ale ecranului */
+}
 
 #portofoliolist {
   list-style: none;
