@@ -58,8 +58,8 @@ main {
   color: #007bff; /* Culoarea la hover */
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;
   color: #212121;
   background-color: #fff;
@@ -1099,7 +1099,7 @@ input:-ms-input-placeholder {
 
 /* Stiluri pentru fiecare element din lista de funcționalități */
 .feature-list li {
-  width: 45%; /* Astfel încât să aibă două coloane pe ecranele mici */
+  width: 45%; /* Două coloane pe ecranele mari */
   margin-bottom: 20px;
   text-align: center;
 }
@@ -1123,18 +1123,7 @@ input:-ms-input-placeholder {
   font-size: 1rem; /* Mărimea fontului pentru paragrafe */
 }
 
-/* Media query pentru ecrane cu lățime mai mică de 768px */
-@media (max-width: 768px) {
-  .feature-list li {
-      width: 90%; /* Se extinde pe întreaga lățime a ecranului */
-  }
-
-  .feature-list li svg {
-      max-width: 100%; /* Se adaptează la lățimea ecranului */
-  }
-
-  /* Alte stiluri pentru elementele la dimensiuni mici ale ecranului */
-}
+/* Media query pentru ecrane cu lățime mai mică de 
 
 #portofoliolist {
   list-style: none;
@@ -1147,7 +1136,6 @@ input:-ms-input-placeholder {
   display: inline-block;
   margin: 10px;
   overflow: hidden; /* Pentru a asigura că suprapunerea este tăiată corect */
-}
 
 #portofoliolist li::after {
   content: "";
