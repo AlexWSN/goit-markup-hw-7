@@ -566,24 +566,17 @@ ul {
 }
 /* Pentru ecrane cu densitate normală (x1) */
 @media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 96dpi) {
-  /* Adaugă aici stilurile corespunzătoare */
   .box-top {
     background-image: url("/images/background@1x.jpg");
-    /* Alte stiluri pentru densitatea x1 */
   }
 }
 
 /* Pentru ecrane cu densitate dublă (x2) */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* Adaugă aici stilurile corespunzătoare */
   .box-top {
     background-image: url("/images/background@2x.jpg");
-    /* Alte stiluri pentru densitatea x2 */
   }
 }
-
-/* Alte densități pot fi adăugate la nevoie */
-
 
 /* Adăugarea unui chenar în jurul fiecărui element de listă */
 #portofoliolist li {
@@ -1112,27 +1105,28 @@ input:-ms-input-placeholder {
   }
 }
 /* Stiluri pentru lista de funcționalități */
+/* Stilurile pentru containerul listei de funcționalități */
 .feature-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-around; /* Elementele sunt distribuite uniform pe orizontală */
 }
 
-/* Stiluri pentru fiecare element din lista de funcționalități */
+/* Stilurile pentru fiecare element din lista de funcționalități */
 .feature-list li {
   width: 45%; /* Două coloane pe ecranele mari */
   margin-bottom: 20px;
-  text-align: center;
+  text-align: center; /* Textul este centrat în interiorul fiecărui element */
 }
 
-/* Stiluri pentru imaginea SVG */
+/* Stilurile pentru imaginea SVG */
 .feature-list li svg {
   width: 100%; /* Face imaginea să fie la lățime maximă în containerul său */
   max-width: 200px; /* Limită de lățime a imaginii */
-  height: auto;
+  height: auto; /* Menține proporțiile imaginii */
 }
 
-/* Stiluri pentru textul din lista de funcționalități */
+/* Stilurile pentru textul din lista de funcționalități */
 .feature-list li h4 {
   margin-top: 15px;
   margin-bottom: 10px;
