@@ -564,6 +564,9 @@ ul {
   background: var(--color-background);
   background-image: url("/images/background.jpg");
 }
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+
 /* Adăugarea unui chenar în jurul fiecărui element de listă */
 #portofoliolist li {
   border: 1px solid #ccc;
