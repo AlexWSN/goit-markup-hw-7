@@ -543,6 +543,54 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
 }
+/* Stiluri pentru dispozitive mobile (0px - 767px) */
+/* Aceste stiluri sunt aplicate implicit, deoarece este abordarea Mobile First */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+/* Stiluri pentru dispozitive cu lățime minimă de 768px (tablete) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+/* Stiluri pentru dispozitive cu lățime între 768px și 1023px (tablete mari) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+/* Stiluri pentru dispozitive cu lățime minimă de 1024px (desktop) */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
+
 .filter-buttons button:hover,
 .filter-buttons button:focus {
   color: rgb(255, 255, 255);
